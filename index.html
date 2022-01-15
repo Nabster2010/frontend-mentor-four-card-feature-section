@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              red: "hsl(0, 78%, 62%)",
+              cyan: "hsl(180, 62%, 55%)",
+              orange: "hsl(34, 97%, 64%)",
+              blue: "hsl(212, 86%, 64%)",
+              veryDarkBlue: "hsl(234, 12%, 34%)",
+              grayishBlue: "hsl(229, 6%, 66%)",
+              veryLightGray: "hsl(0, 0%, 98%)",
+            },
+            fontFamily: {
+              Poppins: ["Poppins", "ui-sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body class="font-Poppins min-h-screen">
+    <section
+      class="max-w-sm min-h-screen items-center flex flex-col m-auto px-10 pt-16 pb-4 md:pt-8 md:max-w-6xl"
+    >
+      <div class="text-center max-w-sm">
+        <h1 class="font-extralight text-grayishBlue text-xl md:text-2xl">
+          Reliable, efficient delivery
+        </h1>
+        <h1 class="font-semibold font-veryDarkBlue mt-1 text-xl md:text-2xl">
+          Powered by Technology
+        </h1>
+        <p class="text-grayishBlue text-sm mt-2 text-justify md:text-center">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <div class="md:grid md:grid-cols-3 md:items-center md:gap-4">
+        <div class="border-t-4 border-cyan shadow-lg p-6 mt-8 rounded-md">
+          <h1 font-semibold font-veryDarkBlue>Supervisor</h1>
+          <p class="text-grayishBlue text-sm mt-2">
+            Monitors activity to identify project roadblocks
+          </p>
+          <div class="item-center flex justify-end mt-8">
+            <img src="./images/icon-supervisor.svg" alt="" class="max-w-full" />
+          </div>
+        </div>
+        <div>
+          <div class="border-t-4 border-red shadow-lg p-6 mt-8 rounded-md">
+            <h1 font-semibold font-veryDarkBlue>Team Builder</h1>
+            <p class="text-grayishBlue text-sm mt-2">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="item-center flex justify-end mt-8">
+              <img
+                src="./images/icon-team-builder.svg"
+                alt=""
+                class="max-w-full"
+              />
+            </div>
+          </div>
+          <div
+            class="border-t-4 border-orange shadow-lg p-6 mt-8 md:mt-4 rounded-md"
+          >
+            <h1 font-semibold font-veryDarkBlue>Karma</h1>
+            <p class="text-grayishBlue text-sm mt-2">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="item-center flex justify-end mt-8">
+              <img src="./images/icon-karma.svg" alt="" class="max-w-full" />
+            </div>
+          </div>
+        </div>
+        <div class="border-t-4 border-blue shadow-lg p-6 mt-8 rounded-md">
+          <h1 font-semibold font-veryDarkBlue>Calculator</h1>
+          <p class="text-grayishBlue text-sm mt-2">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <div class="item-center flex justify-end mt-8">
+            <img src="./images/icon-calculator.svg" alt="" class="max-w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
